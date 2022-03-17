@@ -74,11 +74,11 @@
                                             </select>
                                             <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
                                         </div>
-                                    <div class="form-group has-success">
-                                          <label for="cc-name" class="control-label mb-1">Nama Siswa</label>
-                                          <input id="nama" name="nama" type="text" class="form-control cc-name valid" data-val="true" data-val-required="Please enter the name on card" autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error">
-                                          <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
-                                      </div>
+                                        <div class="form-group has-success">
+                                            <label for="cc-name" class="control-label mb-1">Jumlah Bayar</label>
+                                            <input id="nama" name="nama" type="text" class="form-control cc-name valid" data-val="true" data-val-required="Please enter the name on card" autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error">
+                                            <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
+                                        </div>
                                       {{-- end Form Name/ Nama--}}
 
                                       {{-- Form Card Number / NISN --}}
@@ -99,7 +99,10 @@
                                           <div class="col-6">
                                               <label for="x_card_code" class="control-label mb-1">Nis</label>
                                               <div class="input-group">
-                                                  <input id="nis" name="nis" type="tel" class="form-control cc-cvc" value="" data-val="true" data-val-required="Please enter the security code" data-val-cc-cvc="Please enter a valid security code" autocomplete="off">
+                                                <select data-placeholder="Nama Bulan" class="standardSelect" tabindex="1" name="bulan">
+                                                    <option value="Belum Lunas">Belum Lunas</option>
+                                                    <option value="Lunas">Lunas</option>
+                                                </select>
                                                   <div class="input-group-addon">
                                                   </div>
                                               </div>

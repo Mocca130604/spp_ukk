@@ -59,15 +59,15 @@ return [
     |
     */
 
-    'providers' => [
+     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\Models\Petugas::class,
         ],
 
         // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
+        //         'driver' => 'database',
+        //         'table' => 'petugas',
         // ],
     ],
 

@@ -67,7 +67,7 @@
                     <li>
                         <a href="{{ url('home')}}"> <i class="menu-icon fa fa-home"></i>Home </a>
                     </li>
-                    
+                    {{-- @if(Auth()->user()->level == 'admin') --}}
                     <li class="menu-item-has-children dropdown show">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <i class="menu-icon fa fa-laptop"></i>Admin</a>
                         <ul class="sub-menu children active dropdown-menu show">
@@ -79,7 +79,7 @@
                             <li><i class="fa fa-calendar"></i><a href="{{ url('tahun')}}">Tahun</a></li>
                         </ul>
                     </li>
-
+                    {{-- @endif --}}
 
                     <li>
                         <a href="{{ url('transaksi')}}"> <i class="menu-icon fa fa-money"></i>Transaki </a>

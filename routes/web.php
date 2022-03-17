@@ -24,15 +24,9 @@ Route::get('home',function () {
 }); 
 // harus di hapus
 
-Route::get('login',function () {
 
-    return view('login');
-});
 
-Route::get('register',function () {
 
-    return view('register');
-});
 
 Route::get('user_daftar','UserController@show'); 
 Route::get('user/add','UserController@add');  
@@ -63,3 +57,6 @@ Route::resource('spp','SppController');
 Route::resource('angkatan','AngkatanCotroller');
 
 Route::resource('tahun','TahunController');
+
+Route::get('login','LoginController@index');
+Route::post('postlogin','LoginController@postlogin');
